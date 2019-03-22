@@ -1,0 +1,17 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: ribbon-properties-consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8081/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true      #显示ip
+client-provider:       #通过配置文件进行ribbon配置
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

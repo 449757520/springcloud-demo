@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka" />
+        <module name="eureka-consumer-client" />
+        <module name="eureka-consumer-client-feign" />
+        <module name="eureka-consumer-client-feign-customizing" />
+        <module name="eureka-consumer-client-ribbon" />
+        <module name="eureka-consumer-client-ribbon-properties" />
+        <module name="eureka-consumer-client-ribbon-properties-without-eureka" />
+        <module name="eureka-demo" />
+        <module name="eureka-discovery" />
+        <module name="eureka-discovery-eureka-ha" />
+        <module name="eureka-provider-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka" target="1.8" />
+      <module name="eureka-consumer-client" target="1.8" />
+      <module name="eureka-consumer-client (1)" target="1.8" />
+      <module name="eureka-consumer-client-feign" target="1.8" />
+      <module name="eureka-consumer-client-feign-customizing" target="1.8" />
+      <module name="eureka-consumer-client-ribbon" target="1.8" />
+      <module name="eureka-consumer-client-ribbon-properties" target="1.8" />
+      <module name="eureka-consumer-client-ribbon-properties (1)" target="1.8" />
+      <module name="eureka-consumer-client-ribbon-properties-without-eureka" target="1.8" />
+      <module name="eureka-consumer-client-ribbon-without-eureka" target="1.8" />
+      <module name="eureka-demo" target="1.8" />
+      <module name="eureka-discovery" target="1.8" />
+      <module name="eureka-discovery-eureka" target="1.8" />
+      <module name="eureka-discovery-eureka-ha" target="1.8" />
+      <module name="eureka-provider-client" target="1.8" />
+      <module name="eureka-user-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

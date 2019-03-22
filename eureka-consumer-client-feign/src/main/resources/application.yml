@@ -1,0 +1,13 @@
+server:
+  port: 8183
+spring:
+  application:
+    name: client-consumer-feign
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8081/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true     #显示ip

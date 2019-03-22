@@ -1,0 +1,20 @@
+server:
+  port: 8283
+spring:
+  application:
+    name: client-consumer-feign-customizing
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8081/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true      #显示ip
+logging:
+  level:
+       com.example.eurekaconsumerclient.feign.TestClient: debug
+
+

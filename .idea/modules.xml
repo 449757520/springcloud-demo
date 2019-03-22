@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/eureka.iml" filepath="$PROJECT_DIR$/.idea/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client/eureka-consumer-client.iml" filepath="$PROJECT_DIR$/eureka-consumer-client/eureka-consumer-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-feign/eureka-consumer-client-feign.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-feign/eureka-consumer-client-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-feign-customizing/eureka-consumer-client-feign-customizing.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-feign-customizing/eureka-consumer-client-feign-customizing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon/eureka-consumer-client-ribbon.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon/eureka-consumer-client-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-properties/eureka-consumer-client-ribbon-properties.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-properties/eureka-consumer-client-ribbon-properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-properties-without-eureka/eureka-consumer-client-ribbon-properties-without-eureka.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-properties-without-eureka/eureka-consumer-client-ribbon-properties-without-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-demo/eureka-demo.iml" filepath="$PROJECT_DIR$/eureka-demo/eureka-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-discovery/eureka-discovery.iml" filepath="$PROJECT_DIR$/eureka-discovery/eureka-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-discovery-eureka-ha/eureka-discovery-eureka-ha.iml" filepath="$PROJECT_DIR$/eureka-discovery-eureka-ha/eureka-discovery-eureka-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-provider-client/eureka-provider-client.iml" filepath="$PROJECT_DIR$/eureka-provider-client/eureka-provider-client.iml" />
+    </modules>
+  </component>
+</project>

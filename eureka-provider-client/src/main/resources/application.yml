@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: client-provider                              #服务提供者名称  英文字母建议使用小写
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8081/eureka  #eureka服务地址
+  instance:
+    prefer-ip-address: true    #显示ip
+    metadata-map:
+      zone: ABC           #eureka可以理解的元数据
+      my-metadata: 自定义的元数据  #自定义标签 不影响客户端行为
+    lease-renewal-interval-in-seconds: 5   #心跳频率

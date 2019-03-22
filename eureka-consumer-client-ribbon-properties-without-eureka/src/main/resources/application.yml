@@ -1,0 +1,19 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: ribbon-properties-consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8081/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true      #显示ip
+ribbon:
+  eureka:
+   enabled: false      #禁止使用eureka
+client-provider:
+  ribbon:
+    listOfServers:localhost:8082   #指定用某个服务

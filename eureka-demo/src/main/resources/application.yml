@@ -1,0 +1,17 @@
+server:
+  port: 8081      #eureka默认访问端口8761
+spring:
+  security:
+    user:
+      name: admin #权限用户名user
+      password: admin #权限密码password123
+eureka:
+  client:
+    register-with-eureka: false   #是否将自己注册到eureka中
+    fetch-registry: false    #是否获取在自身信息
+    service-url:
+      #defaultZone: http://localhost:${server.port}/eureka #以参数形式获取
+      defaultZone: http://admin:admin@localhost:8081/eureka
+    healthcheck:                                        #检查健康
+      enabled: true
+ 
