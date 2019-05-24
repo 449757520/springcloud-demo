@@ -2,14 +2,29 @@ server:
   port: 8082
 spring:
   application:
-    name: client-provider                              #服务提供者名称  英文字母建议使用小写
+    name: client-provider-v1                    #服务提供者名称  英文字母建议使用小写
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:admin@localhost:8081/eureka  #eureka服务地址
+      defaultZone: http://admin:admin@localhost:8100/eureka #eureka服务地址
+          #defaultZone: http://peer1:8261/eureka,http://peer2:8262/eureka
+    healthcheck:
+          enabled: true
+#  dashboard:
+#    enabled: false     # 禁止使用eureka 界面
+#    path: /x      #配置访问路径 配置之后的访问路径是 http://peer1:8261/x
   instance:
     prefer-ip-address: true    #显示ip
+#    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id}:${server.port}
+#    instance-id: ${spring.application.name}:${server.port}
     metadata-map:
       zone: ABC           #eureka可以理解的元数据
       my-metadata: 自定义的元数据  #自定义标签 不影响客户端行为
-    lease-renewal-interval-in-seconds: 5   #心跳频率
+      lease-renewal-interval-in-seconds: 5   #心跳频率
+#  eureka.instance.appname: HAHA 相当于 spring.application.name 命名 解决冲突
+management:
+  endpoint:
+    health:
+      show-details: always   #展示health详细信息
+#最后一次心跳时间后leaseExpirationDurationInSeconds秒就认为是下线了，默认是90秒
+#org.springframework.cloud.netflix.eureka.EurekaInstanceConfigBean.leaseExpirationDurationInSeconds

@@ -2,8 +2,13 @@ package com.example.eurekaproviderclient.controller;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.example.eurekaproviderclient.pojo.User;
+import org.assertj.core.util.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 public class TestController {
     @Autowired
@@ -29,6 +34,17 @@ public class TestController {
         user.setId(id);
         user.setUsername(username);
         return user;
+    }
+    @GetMapping("list-all")
+    public List<User> listAll(){
+        ArrayList<User> list = Lists.newArrayList();
+        User user = new User(1L,"a");
+        User user1 = new User(2L,"b");
+        User user2 = new User(3L,"c");
+        list.add(user);
+        list.add(user1);
+        list.add(user2);
+        return list;
     }
 }
 

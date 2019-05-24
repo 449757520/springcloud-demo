@@ -6,13 +6,30 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client/eureka-consumer-client.iml" filepath="$PROJECT_DIR$/eureka-consumer-client/eureka-consumer-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-feign/eureka-consumer-client-feign.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-feign/eureka-consumer-client-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-feign-customizing/eureka-consumer-client-feign-customizing.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-feign-customizing/eureka-consumer-client-feign-customizing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-feign-customizing-without-hystrix/eureka-consumer-client-feign-customizing-without-hystrix.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-feign-customizing-without-hystrix/eureka-consumer-client-feign-customizing-without-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-feign-with-hystrix/eureka-consumer-client-feign-with-hystrix.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-feign-with-hystrix/eureka-consumer-client-feign-with-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-feign-with-hystrix-factory/eureka-consumer-client-feign-with-hystrix-factory.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-feign-with-hystrix-factory/eureka-consumer-client-feign-with-hystrix-factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon/eureka-consumer-client-ribbon.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon/eureka-consumer-client-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-properties/eureka-consumer-client-ribbon-properties.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-properties/eureka-consumer-client-ribbon-properties.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-properties-without-eureka/eureka-consumer-client-ribbon-properties-without-eureka.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-properties-without-eureka/eureka-consumer-client-ribbon-properties-without-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-test-List/eureka-consumer-client-ribbon-test-List.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-test-List/eureka-consumer-client-ribbon-test-List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix/eureka-consumer-client-ribbon-with-hystrix.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix/eureka-consumer-client-ribbon-with-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix2/eureka-consumer-client-ribbon-with-hystrix2.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix2/eureka-consumer-client-ribbon-with-hystrix2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix3/eureka-consumer-client-ribbon-with-hystrix3.iml" filepath="$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix3/eureka-consumer-client-ribbon-with-hystrix3.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-demo/eureka-demo.iml" filepath="$PROJECT_DIR$/eureka-demo/eureka-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-discovery/eureka-discovery.iml" filepath="$PROJECT_DIR$/eureka-discovery/eureka-discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-discovery-eureka-ha/eureka-discovery-eureka-ha.iml" filepath="$PROJECT_DIR$/eureka-discovery-eureka-ha/eureka-discovery-eureka-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-file-upload/eureka-file-upload.iml" filepath="$PROJECT_DIR$/eureka-file-upload/eureka-file-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-gateway-zuul/eureka-gateway-zuul.iml" filepath="$PROJECT_DIR$/eureka-gateway-zuul/eureka-gateway-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-gateway-zuul-fallback/eureka-gateway-zuul-fallback.iml" filepath="$PROJECT_DIR$/eureka-gateway-zuul-fallback/eureka-gateway-zuul-fallback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-gateway-zuul-filter/eureka-gateway-zuul-filter.iml" filepath="$PROJECT_DIR$/eureka-gateway-zuul-filter/eureka-gateway-zuul-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-gateway-zuul-reg-exp/eureka-gateway-zuul-reg-exp.iml" filepath="$PROJECT_DIR$/eureka-gateway-zuul-reg-exp/eureka-gateway-zuul-reg-exp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-hystrix-dashboard/eureka-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/eureka-hystrix-dashboard/eureka-hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-hystrix-turbine/eureka-hystrix-turbine.iml" filepath="$PROJECT_DIR$/eureka-hystrix-turbine/eureka-hystrix-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-hystrix-turbine2/eureka-hystrix-turbine2.iml" filepath="$PROJECT_DIR$/eureka-hystrix-turbine2/eureka-hystrix-turbine2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-hystrix-turbine3/eureka-hystrix-turbine3.iml" filepath="$PROJECT_DIR$/eureka-hystrix-turbine3/eureka-hystrix-turbine3.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-provider-client/eureka-provider-client.iml" filepath="$PROJECT_DIR$/eureka-provider-client/eureka-provider-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-sidecar/eureka-sidecar.iml" filepath="$PROJECT_DIR$/eureka-sidecar/eureka-sidecar.iml" />
     </modules>
   </component>
 </project>

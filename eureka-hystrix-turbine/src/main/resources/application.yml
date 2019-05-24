@@ -1,0 +1,26 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: hystrix-turbine
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka #eureka服务地址
+  instance:
+    prefer-ip-address: true    #显示ip
+management:
+  endpoint:
+    health:
+      show-details: always   #展示health详细信息
+#配置turbine监控的单个项目
+#turbine:
+#  aggregator:
+#    clusterConfig: RIBBON-WITH-HYSTRIX
+#  appConfig: ribbon-with-hystrix       #配置项目名称
+#配置turbine监控多个项目
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: ribbon-with-hystrix,client-consumer-feign-hystrix  #配置项目名称
+  clusterNameExpression: "'default'"

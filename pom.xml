@@ -11,6 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>eureka</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -59,9 +60,30 @@
         <module>eureka-consumer-client-ribbon-properties</module>
         <!--禁止使用Eureka测试案例-->
         <module>eureka-consumer-client-ribbon-properties-without-eureka</module>
+        <!-- 测试数组 -->
+        <module>eureka-consumer-client-ribbon-test-List</module>
+        <module>eureka-consumer-client-ribbon-with-hystrix</module>
+        <module>eureka-consumer-client-ribbon-with-hystrix2</module>
+        <module>eureka-consumer-client-ribbon-with-hystrix3</module>
         <module>eureka-consumer-client-feign</module>
         <module>eureka-consumer-client-feign-customizing</module>
+        <module>eureka-consumer-client-feign-with-hystrix</module>
+        <module>eureka-consumer-client-feign-customizing-without-hystrix</module>
+        <module>eureka-consumer-client-feign-with-hystrix-factory</module>
         <module>eureka-discovery</module>
         <module>eureka-discovery-eureka-ha</module>
+        <!--hystrix 仪表盘的使用-->
+        <module>eureka-hystrix-dashboard</module>
+        <module>eureka-hystrix-turbine</module>
+        <module>eureka-hystrix-turbine2</module>
+        <module>eureka-hystrix-turbine3</module>
+        <!--zuul 服务网管-->
+        <module>eureka-gateway-zuul</module>
+        <!--网管根据正则管理微服务-->
+        <module>eureka-gateway-zuul-reg-exp</module>
+        <module>eureka-file-upload</module>
+        <module>eureka-gateway-zuul-fallback</module>
+        <module>eureka-gateway-zuul-filter</module>
+        <module>eureka-sidecar</module>
     </modules>
 </project>

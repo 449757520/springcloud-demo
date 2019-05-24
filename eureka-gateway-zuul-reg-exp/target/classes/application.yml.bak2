@@ -1,0 +1,17 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: gateway-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka
+  instance:
+    prefer-ip-address: true      #eureka服务地址
+zuul:
+  #ignored-services: ribbon-with-hystrix      # 反向代理 修改访问名称 例如：之前的访问路径是http://192.168.1.247:8040/client-provider/test/rr,修改完之后的访问路径是http://192.168.1.247:8040/user/test/rr
+  routes:
+    users:
+      path: /url-path/**
+      serviceId: client-provider

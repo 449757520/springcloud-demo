@@ -1,0 +1,17 @@
+server:
+  port: 8041
+spring:
+  application:
+    name: gateway-zuul-reg
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka
+  instance:
+    prefer-ip-address: true     #eureka服务地址
+zuul:
+  prefix: /test   #请求的方法名http://172.16.10.53:8041/test/v1/client-provider/ceshi;原本的请求路径是:http://172.16.10.53:8041/v1/client-provider/ceshi：
+  strip-prefix: false
+logging:
+  level:
+    com.netflix: debug

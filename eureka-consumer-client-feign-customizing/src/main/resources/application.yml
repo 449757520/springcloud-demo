@@ -8,7 +8,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:admin@localhost:8081/eureka #eureka服务地址
+      defaultZone: http://admin:admin@localhost:8100/eureka #eureka服务地址
     healthcheck:
       enabled: true
   instance:

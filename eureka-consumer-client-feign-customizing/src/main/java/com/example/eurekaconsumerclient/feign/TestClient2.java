@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 @Component
-@FeignClient(name = "xxx",url = "http://localhost:8081/*",configuration = Configuration2.class)
+@FeignClient(name = "xxx",url = "http://localhost:8100/*",configuration = Configuration2.class)
 public interface TestClient2 {
     @RequestMapping(method = RequestMethod.GET,value = "/eureka/apps/{serviceName}")
     String findServiceInfoEurekaByServiceName(@PathVariable("serviceName")String serviceName);

@@ -1,0 +1,22 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: sidecar
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka
+  instance:
+    prefer-ip-address: true
+sidecar:
+  port: 8060
+  health-uri: http://localhost:8060/health.json
+management:                       #显示路由zuul的端口配置，不配置无法访问 /routes
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+      health:
+        show-details: ALWAYS

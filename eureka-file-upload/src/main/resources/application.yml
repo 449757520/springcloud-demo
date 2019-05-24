@@ -1,0 +1,17 @@
+server:
+  port: 8186
+spring:
+  application:
+    name: file-upload
+  http:
+    multiparts:
+      max-file-size: 2000Mb       #默认文件大小的值是1Mb
+      max-request-size: 2500Mb    #请求资源最大默认是10Mb
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka #eureka服务地址
+    healthcheck:
+          enabled: true
+  instance:
+    prefer-ip-address: true

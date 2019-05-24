@@ -1,0 +1,22 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: gateway-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka
+  instance:
+    prefer-ip-address: true      #eureka服务地址
+zuul:
+  routes:
+    users:
+      path: /url-path/**
+      serviceId: client-provider
+ribbon:
+  eureka:
+    enabled: false      #禁用掉ribbon的eureka使用
+client-provider:   #这边指的是serviceId
+  ribbon:
+    listOfServers: http://localhost:7900,http://localhost:7901

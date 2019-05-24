@@ -1,0 +1,27 @@
+server:
+  port: 8184
+spring:
+  application:
+    name: client-consumer-feign-hystrix-factory
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8081/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true     #显示ip
+management:
+  endpoint:
+    health:
+      show-details: always
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+feign:
+  hystrix:
+    enabled: true  #展示health详细信息     持续访问服务

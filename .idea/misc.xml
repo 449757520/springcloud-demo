@@ -10,6 +10,17 @@
         <option value="D:/eureka-consumer-client-ribbon-without-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-consumer-client-feign/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-discovery-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-provider-client/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-consumer-client-ribbon-test-List/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-consumer-client-feign-with-hystrix-hystrix-factory/pom.xml" />
+        <option value="D:/eureka-consumer-client-feign-with-hystrix-hystrix-factory/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-consumer-client-feign-with-hystrix-factory/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-hystrix-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-consumer-client-ribbon-with-hystrix2/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-hystrix-turbine3/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-gateway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-gateway-zuul-fallback/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

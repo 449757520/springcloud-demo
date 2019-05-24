@@ -1,0 +1,32 @@
+management:   #spring-boot-starter-acturator的端口
+  server:
+    port: 8081   #管理端口
+  endpoint:
+      health:
+        show-details: always
+server:
+  port: 8184
+  servlet:
+    context-path: /ribbon
+spring:
+  application:
+    name: ribbon-with-hystrix3
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true  #显示ip
+    metadata-map:
+      management.server.port: 8081
+      #cluster: ABC
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000   #用于测试Fallback方法
+

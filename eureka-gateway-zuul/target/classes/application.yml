@@ -1,0 +1,27 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: gateway-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka
+  instance:
+    prefer-ip-address: true      #eureka服务地址
+#actuator  启用所有的监控端点 “*”号代表启用所有的监控端点，可以单独启用，例如，health，info，metrics
+#  spring boot 升为 2.0 后，为了安全，默认 Actuator 只暴露了2个端点，heath 和 info
+management:                       #显示路由zuul的端口配置，不配置无法访问 /routes
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+      health:
+        show-details: ALWAYS
+#zuul:
+#  routes:
+#    users:
+#      path: /url-path/**
+#      serviceId: client-provider-v1
+    #ignored-services: ribbon-with-hystrix      # 反向代理 修改访问名称 例如：之前的访问路径是http://192.168.1.247:8040/client-provider/test/rr,修改完之后的访问路径是http://192.168.1.247:8040/user/test/rr

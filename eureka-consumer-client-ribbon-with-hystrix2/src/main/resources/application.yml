@@ -1,0 +1,27 @@
+server:
+  port: 8183
+  servlet:
+    context-path: /ribbon
+spring:
+  application:
+    name: ribbon-with-hystrix2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true  #显示ip
+    home-page-url-path: /ribbon
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000   #用于测试Fallback方法
+management:
+  endpoint:
+    health:
+      show-details: always   #展示health详细信息

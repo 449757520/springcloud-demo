@@ -8,8 +8,8 @@
       <configuration>
         <webroots />
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
+          <root url="file://$MODULE_DIR$/../../eureka/eureka-consumer-client/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../eureka/eureka-consumer-client/src/main/resources" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -17,15 +17,15 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/target" />
+    <content url="file://$MODULE_DIR$/../../eureka/eureka-consumer-client">
+      <sourceFolder url="file://$MODULE_DIR$/../../eureka/eureka-consumer-client/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../eureka/eureka-consumer-client/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../eureka/eureka-consumer-client/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../eureka/eureka-consumer-client/target" />
     </content>
-    <content url="file://$MODULE_DIR$/../eureka-discovery-eureka/src/main/java" />
-    <content url="file://$MODULE_DIR$/../eureka-discovery-eureka/src/main/resources" />
-    <content url="file://$MODULE_DIR$/../eureka-discovery-eureka/src/test/java" />
+    <content url="file://$MODULE_DIR$/../../eureka/eureka-discovery-eureka/src/main/java" />
+    <content url="file://$MODULE_DIR$/../../eureka/eureka-discovery-eureka/src/main/resources" />
+    <content url="file://$MODULE_DIR$/../../eureka/eureka-discovery-eureka/src/test/java" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.1.3.RELEASE" level="project" />

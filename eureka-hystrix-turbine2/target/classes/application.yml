@@ -1,0 +1,25 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: hystrix-turbine2
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8081/eureka #eureka服务地址
+  instance:
+    prefer-ip-address: true    #显示ip
+management:
+  endpoint:
+    health:
+      show-details: always   #展示health详细信息
+#配置turbine监控的单个项目
+turbine:
+  aggregator:
+    clusterConfig: RIBBON-WITH-HYSTRIX
+  appConfig: ribbon-with-hystrix   #配置项目名称
+logging:
+  level:
+    root: info
+    com.netflix.turbine.monitor: debug
+turbine.instanceUrlSuffix.RIBBON-WITH-HYSTRIX: /ribbon/actuator/hystrix.stream

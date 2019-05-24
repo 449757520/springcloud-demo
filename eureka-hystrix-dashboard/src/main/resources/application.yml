@@ -1,0 +1,17 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: hystrix-dashboard
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8100/eureka #eureka服务地址
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true      #显示ip
+management:
+  endpoint:
+    health:
+      show-details: always   #展示health详细信息

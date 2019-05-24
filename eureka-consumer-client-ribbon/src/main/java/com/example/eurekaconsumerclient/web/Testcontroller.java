@@ -27,11 +27,14 @@ public class Testcontroller {
         System.out.println(serviceInstance2.getHost()+ ":"+serviceInstance2.getPort()+" : "+serviceInstance2.getServiceId());
         return "1";
     }
-
-
     @GetMapping("/movie/{name}")
     public String findById(@PathVariable("name")String name){
-        return this.restTemplate.getForObject("http://client-provider/test/"+name,String.class);
+        return this.restTemplate.getForObject("http://client-provider-v1/test/"+name,String.class);
+    }
+
+    @GetMapping("/sidecar/")
+    public String findById(){
+        return this.restTemplate.getForObject("http://sidecar/",String.class);
     }
 
 }

@@ -12,7 +12,7 @@ eureka:
     hostname: peer1
   client:
     serviceUrl:
-      defaultZone: http://peer2:8262/eureka/
+      defaultZone: http://peer2:8262/eureka/,http://peer3:8263/eureka/
 
 ---
 server:
@@ -24,4 +24,17 @@ eureka:
     hostname: peer2
   client:
     serviceUrl:
-      defaultZone: http://peer1:8261/eureka/
+      defaultZone: http://peer1:8261/eureka/,http://peer3:8263/eureka/
+
+
+---
+server:
+  port: 8263
+spring:
+  profiles: peer3
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8261/eureka/,http://peer2:8262/eureka/
